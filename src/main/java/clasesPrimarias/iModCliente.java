@@ -108,7 +108,7 @@ public class iModCliente extends javax.swing.JFrame {
         });
         getContentPane().add(botonSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(341, 58, -1, -1));
 
-        botonGuardarC.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        botonGuardarC.setFont(new java.awt.Font("Tahoma", 0, 36));  
         botonGuardarC.setText("Guardar");
         botonGuardarC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,11 +117,11 @@ public class iModCliente extends javax.swing.JFrame {
         });
         getContentPane().add(botonGuardarC, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 190, 174, -1));
 
-        jLabel1.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Calibri", 0, 36));  
         jLabel1.setText("MODIFICAR CLIENTES");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(48, 7, -1, -1));
 
-        botonBorrarC.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        botonBorrarC.setFont(new java.awt.Font("Tahoma", 0, 12));  
         botonBorrarC.setText("Borrar Cliente");
         botonBorrarC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -218,7 +218,7 @@ public class iModCliente extends javax.swing.JFrame {
     	}
     }
 
-    public void botonBuscarCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonBuscarCActionPerformed
+    public void botonBuscarCActionPerformed(java.awt.event.ActionEvent evt) {
     	
     		int seleccion = tablaClientes.getSelectedRow();
             if(seleccion >= 0) {
@@ -270,13 +270,12 @@ public class iModCliente extends javax.swing.JFrame {
     			actualizarTabla();
     			
             } catch (SQLException e) {
-    			// 
             	JOptionPane.showMessageDialog(null,"DNI invalido");
     			e.printStackTrace();
     		}
             
         }
-            }
+    }
     		
 
     private void formFocusGained(java.awt.event.FocusEvent evt) {
@@ -291,13 +290,13 @@ public class iModCliente extends javax.swing.JFrame {
         ingresaDNI.setText("");
     }
 
-    private void botonActualizarTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonActualizarTActionPerformed
+    private void botonActualizarTActionPerformed(java.awt.event.ActionEvent evt) {
         borrarTabla();
     	actualizarTabla();
-    }//GEN-LAST:event_botonActualizarTActionPerformed
+    }
 
     @SuppressWarnings("unused")
-	private void botonGuardarCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonGuardarCActionPerformed
+	private void botonGuardarCActionPerformed(java.awt.event.ActionEvent evt) {
 
     	try {
     		String DNISeleccionado = ingresaDNI.getText();
